@@ -43,7 +43,8 @@ defmodule QuickIntrosWeb do
         layouts: [html: QuickIntrosWeb.Layouts]
 
       import Plug.Conn
-      import QuickIntrosWeb.Gettext
+      # import QuickIntrosWeb.Gettext
+      use Gettext, backend: QuickIntrosWeb.Gettext
 
       unquote(verified_routes())
     end

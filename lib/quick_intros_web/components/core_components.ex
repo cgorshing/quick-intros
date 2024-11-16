@@ -17,7 +17,8 @@ defmodule QuickIntrosWeb.CoreComponents do
   use Phoenix.Component
 
   alias Phoenix.LiveView.JS
-  import QuickIntrosWeb.Gettext
+  # import QuickIntrosWeb.Gettext
+  use Gettext, backend: QuickIntrosWeb.Gettext
 
   @doc """
   Renders a modal.
