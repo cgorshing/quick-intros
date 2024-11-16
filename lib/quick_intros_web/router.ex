@@ -76,5 +76,8 @@ defmodule QuickIntrosWeb.Router do
     post "/users/confirm", UserConfirmationController, :create
     get "/users/confirm/:token", UserConfirmationController, :edit
     post "/users/confirm/:token", UserConfirmationController, :update
+
+    get "/trial-run", TrialRunController, :new
+    post "/trial-run", TrialRunController, :create
   end
 end
