@@ -14,7 +14,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#FD4F00",
+        brand: '#FD4F00',
+        'regal-card': '#af8684',
+        'regal-card-end': '#6d3f3f',
       }
     },
   },

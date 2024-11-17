@@ -1,7 +1,12 @@
 defmodule QuickIntrosWeb.TrialRunController do
   use QuickIntrosWeb, :controller
 
-  alias QuickIntros.Accounts
+  # alias QuickIntros.Accounts
+
+  def display(conn, _params) do
+    changeset = QuickIntros.TrialRun.foo_changeset(%QuickIntros.TrialRun{}, %{})
+    render(conn, :display, changeset: changeset)
+  end
 
   def new(conn, _params) do
     changeset = QuickIntros.TrialRun.foo_changeset(%QuickIntros.TrialRun{}, %{})

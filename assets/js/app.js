@@ -42,3 +42,12 @@ liveSocket.connect()
 // >> liveSocket.disableLatencySim()
 window.liveSocket = liveSocket
 
+
+
+//-------------------- Java Script --------------------//
+let profileImage = document.getElementById("profile-image")
+let input = document.getElementById("input")
+
+input.addEventListener('change', () => {
+    profileImage.src = URL.createObjectURL(input.files[0])
+})

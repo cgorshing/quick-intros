@@ -79,5 +79,7 @@ defmodule QuickIntrosWeb.Router do
 
     get "/trial-run", TrialRunController, :new
     post "/trial-run", TrialRunController, :create
+
+    get "/trial-run/display", TrialRunController, :display
   end
 end
