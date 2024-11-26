@@ -24,8 +24,8 @@ https://blog.jim-nielsen.com/2023/html-web-components-an-example/
 </div> --%>
 
 
-<div class="card relative flex flex-col justify-center w-[300px] h-[400px] rounded-[40px] shadow-lg items-center gap-5 bg-gradient-to-br from-regal-card to-regal-card-end">
-    <div class="image relative truncate w-[150px] h-[150px] rounded-full border-2 border-white">
+<span class="card card-hard">
+    <span class="image card-image">
         <%!--
         Not sure I need the width & height on this since it is set by the parent
         What the hell do I know
@@ -34,16 +34,47 @@ https://blog.jim-nielsen.com/2023/html-web-components-an-example/
         --%>
         <img class="width-full height-full object-cover" src="/images/papa.jpg" alt="" id="profile-image"/>
         <input type="file" accept="image/jpeg, image/png, image/jpg" id="input" class="input hidden">
-        <label class="upload absolute flex w-full h-full top-0 cursor-pointer bg-[#92929255] opacity-0 text-white text-5xl justify-center items-center hover:opacity-100" for="input">
+        <label class="upload card-upload" for="input">
             <i class="fa-solid fa-camera"></i>
         </label>
-    </div>
+    </span>
 
-    <div class="details text-white text-center">
+    <span class="details card-details">
         <h3 class="font-bold">Walter "Papa" Swart</h3>
         <h4 class="font-light">Molly's Dad</h4>
-    </div>
-</div>
+    </span>
+</span>
+wer
+<span class="card card-hard">
+    <span class="image card-image">
+        <img class="width-full height-full object-cover" src="/images/default-image.jpg" alt="" id="profile-image"/>
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input" class="input hidden">
+        <label class="upload card-upload" for="input">
+            <i class="fa-solid fa-camera"></i>
+        </label>
+    </span>
+
+    <span class="details card-details">
+        <h3 class="font-bold">Walter "Papa" Swart</h3>
+        <h4 class="font-light">Molly's Dad</h4>
+    </span>
+</span>
+
+as
+<span class="card card-hard">
+    <span class="image card-image">
+        <img class="width-full height-full object-cover" src="/images/meme.jpg" alt="" id="profile-image"/>
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input" class="input hidden">
+        <label class="upload card-upload" for="input">
+            <i class="fa-solid fa-camera"></i>
+        </label>
+    </span>
+
+    <span class="details card-details">
+        <h3 class="font-bold">Walter "Papa" Swart</h3>
+        <h4 class="font-light">Molly's Dad</h4>
+    </span>
+</span>
 
 <%!-- <div class="card w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div class="image flex flex-col items-center py-10">

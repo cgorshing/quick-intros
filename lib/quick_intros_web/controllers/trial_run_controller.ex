@@ -5,7 +5,10 @@ defmodule QuickIntrosWeb.TrialRunController do
 
   def display(conn, _params) do
     changeset = QuickIntros.TrialRun.foo_changeset(%QuickIntros.TrialRun{}, %{})
-    render(conn, :display, changeset: changeset)
+
+    conn
+    |> put_layout(html: :cards)
+    |> render(:display, changeset: changeset)
   end
 
   def new(conn, _params) do

@@ -5,6 +5,28 @@
 /* This file is for your main application CSS */
 /* *{outline:1px red solid !important;} */
 
+@layer components {
+  .btn-primary {
+    @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+  }
+
+  .card-hard {
+    @apply relative flex flex-col justify-center w-[300px] h-[400px] rounded-[40px] shadow-lg items-center gap-5 bg-gradient-to-br from-regal-card to-regal-card-end
+  }
+
+  .card-image {
+    @apply relative truncate w-[150px] h-[150px] rounded-full border-2 border-white
+  }
+
+  .card-details {
+    @apply text-white text-center
+  }
+
+  .card-upload {
+    @apply absolute flex w-full h-full top-0 cursor-pointer bg-[#92929255] opacity-0 text-white text-5xl justify-center items-center hover:opacity-100
+  }
+}
+
 /*-------------------- CSS --------------------*/
 
 #foo {
